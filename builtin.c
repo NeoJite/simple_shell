@@ -23,10 +23,10 @@ int _myexit(info_t *info)
 			_eputchar('\n');
 			return (1);
 		}
-		info-err_num = _erratoi(info->argv[1]);
+		info->err_num = _erratoi(info->argv[1]);
 		return (-2);
 	}
-	info -> err_num = -1;
+	info->err_num = -1;
 	return (-2);
 }
 
@@ -97,4 +97,3 @@ int _myhelp(info_t *info)
 		_puts(*arg_array); /* temp att_unused workaround */
 	return (0);
 }
-
