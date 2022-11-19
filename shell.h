@@ -84,6 +84,7 @@ typedef struct passinfo
 	char **argv;
 	char *path;
 	int argc;
+	int err_num;
 	unsigned int line_count;
 	int linecount_flag;
 	char *fname;
@@ -99,6 +100,7 @@ typedef struct passinfo
 	int cmd_buf_type; /* CMD_type ||, &&, ; */
 	int readfd;
 	int histcount;
+
 } info_t;
 
 #define INFO_INIT \
